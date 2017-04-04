@@ -21,4 +21,10 @@ for(i = 0; i < bomba.length; i++){
   bomba[i].addEventListener("click", kaboom);
 }
 
-function kaboom
+function kaboom(){
+  var imgBomba = document.createElement("img");
+  imgBomba.src = "img/explosion.png"
+  imgBomba.style = "width:20px"
+  this.appendChild(imgBomba);
+  gameOver();
+}
