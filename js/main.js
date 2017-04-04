@@ -13,5 +13,12 @@ for(i = 0; i < color.length; i++){
 }
 
 function colour(){
-  this.style.color = "blue";
+  this.style.backgroundColor = "#CC33FF";
 }
+
+var bomba = document.getElementsByClassName("bomba");
+for(i = 0; i < bomba.length; i++){
+  bomba[i].addEventListener("click", kaboom);
+}
+
+function kaboom
