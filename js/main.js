@@ -28,3 +28,15 @@ function kaboom(){
   this.appendChild(imgBomba);
   gameOver();
 }
+
+function gameOver(){
+  alert("KABOOOOOOOOOM!");
+  perdiste();
+}
+
+function perdiste(){
+  var botones = document.getElementsByTagName("button");
+  for(i =0; i < botones.length; i++){
+    botones[i].disabled = true;
+  }
+}
